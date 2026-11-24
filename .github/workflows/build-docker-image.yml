@@ -38,10 +38,10 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/xray-argo:latest
+            ghcr.io/${{ github.repository_owner }}/node-web-starter:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
-            org.opencontainers.image.description=Xray with Cloudflare Argo Tunnel
+            org.opencontainers.image.description=Node.js web starter
             org.opencontainers.image.licenses=MIT
           cache-from: type=gha
           cache-to: type=gha,mode=max
